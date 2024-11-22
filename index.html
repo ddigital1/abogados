@@ -1,0 +1,1084 @@
+<?php
+# Incluir el contador de visitas
+include_once "contar_visita.php";
+?>
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags -->
+		<meta name="description" content="Hacemos valer tus derechos. Estamos orgullosos de ello, AED Abogados En Directo">
+		<meta name="author" content="AED">
+		<link rel="icon" href="images/favicon.ico">
+		<title>Abogados en SLP</title>
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<!-- Custom styles-->
+		<link href="css/owl.carousel.css" rel="stylesheet">
+		<link href="css/owl.theme.default.min.css"  rel="stylesheet">
+		<link href="css/style2.css" rel="stylesheet">
+       <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" /> --->
+        <script language="JavaScript">
+
+       window.onload = function () {
+           document.addEventListener("contextmenu", function (e) {
+               e.preventDefault();
+           }, false);
+           document.addEventListener("keydown", function (e) {
+               //document.onkeydown = function(e) {
+               // "I" key
+               if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+                   disabledEvent(e);
+               }
+               // "J" key
+               if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+                   disabledEvent(e);
+               }
+               // "S" key + macOS
+               if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+                   disabledEvent(e);
+               }
+               // "U" key
+               if (e.ctrlKey && e.keyCode == 85) {
+                   disabledEvent(e);
+               }
+               // "F12" key
+               if (event.keyCode == 123) {
+                   disabledEvent(e);
+               }
+           }, false);
+           function disabledEvent(e) {
+               if (e.stopPropagation) {
+                   e.stopPropagation();
+               } else if (window.event) {
+                   window.event.cancelBubble = true;
+               }
+               e.preventDefault();
+               return false;
+           }
+       }
+//edit: removed ";" from last "}" because of javascript error
+</script>
+<!-- Google tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BCYYDFYG85">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BCYYDFYG85');
+</script> 
+	</head>
+    
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>    <script src="js/jquery.vide.min.js"></script> 
+    
+	<body id="page-top" oncontextmenu = "return false" onselectstart = "return false"  ondragstart = "return false">
+    <div class="loader"></div>
+		<!-- Navigation -->
+		<nav class="navbar navbar-default navbar-static-top dark-bg">
+        
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header page-scroll dark-bg">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand page-scroll" href="#page-top"><img src="images/logo-4.png"  width="100" alt="" class="img-responsive"></a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="hidden">
+							<a href="#page-top"></a>
+						</li>
+						<li>
+							<a href="https://api.whatsapp.com/send?phone=524445760050&text=Hola%20Abogados%20a%20continuacion%20describo%20mi%20caso%20para%20una%20asesoria%20previa%20 cita.Mi%20Nombre es:" class="page-scroll btn btn-xl" target="_blank">Citas</a>
+                            </li>
+                        
+						<li>
+							<a href="https://api.whatsapp.com/send?phone=524445760050&text=Hola%20Abogados%20a%20continuacion%20describo%20mi%20caso%20para%20una%20asesoria%20previa%20 cita.Mi%20Nombre es:" class="page-scroll btn btn-xl" target="_blank">Divorcio </a>
+                            </li>
+                            <li>
+							<a href="https://api.whatsapp.com/send?phone=524445760050&text=Hola%20Abogados%20a%20continuacion%20describo%20mi%20caso%20para%20una%20asesoria%20previa%20 cita.Mi%20Nombre es:" class="page-scroll btn btn-xl" target="_blank">Custodia de menores </a>
+						</li>	
+											
+						<li>
+							<a href="https://api.whatsapp.com/send?phone=524445760050&text=Hola%20Abogados%20a%20continuacion%20describo%20mi%20caso%20para%20una%20asesoria%20previa%20 cita.Mi%20Nombre es:" class="page-scroll btn btn-xl" target="_blank">Pensión Alimenticia</a>
+						</li>
+						<li>
+							<a href="https://api.whatsapp.com/send?phone=524445760050&text=Hola%20Abogados%20a%20continuacion%20describo%20mi%20caso%20para%20una%20asesoria%20previa%20 cita.Mi%20Nombre es:" class="page-scroll btn btn-xl" target="_blank">Accidentes</a>
+						</li>
+						<li>
+							<a href="https://api.whatsapp.com/send?phone=524445760050&text=Hola%20Abogados%20a%20continuacion%20describo%20mi%20caso%20para%20una%20asesoria%20previa%20 cita.Mi%20Nombre es:" class="page-scroll btn btn-xl" target="_blank">Contratos</a>
+						</li>
+                       
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+		<!-- Header -->
+		<header>
+			<div class="container">
+				<div class="slider-container ">
+					<div class="intro-text">
+						<!--<div class="intro-lead-in">Si quieres paz preparate para la guerra</div>-->
+						<div class="intro-heading" align="left"><!--<img src="images/logo-3.png"  width="80"alt="" class="img-responsive" />-->
+                        </div>
+                        
+                       
+					</div>
+				</div>
+			</div>
+		</header>
+		<section id="#" class=" dark-bg">
+			<div class="container">
+				<div class="row">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<div class="section-title">
+							<!--<h2>Quiero El Divorcio</h2>-->
+							<a href="https://api.whatsapp.com/send?phone=524445760050&text=Hola%20Abogados%20a%20continuacion%20describo%20mi%20caso%20Mi%20Nombre es:" class=" btn btn-xl-2" target="_blank">Divorcio</a> * <a href="https://api.whatsapp.com/send?phone=524445760050&text=Hola%20Abogados%20a%20continuacion%20describo%20mi%20caso%20Mi%20Nombre es:" class=" btn btn-xl-2" target="_blank">Laboral</a> * <a href="https://api.whatsapp.com/send?phone=524445760050&text=Hola%20Abogados%20a%20continuacion%20describo%20mi%20caso%20Mi%20Nombre es:" class=" btn btn-xl-2" target="_blank">Intestado</a>
+							<!--. <a href="https://api.whatsapp.com/send?phone=524445760050&text=Hola%20Abogados%20a%20continuacion%20describo%20mi%20caso%20Mi%20Nombre es:" class=" btn btn-xl-2" target="_blank">Despido Injustificado</a>-->				
+                           
+						</div>
+					</div>
+				</div>
+					<div class="col-lg-12 text-center">
+						<div class="section-title">
+							<h2>Abogados En Directo tu mejor aliado legal</h2>
+							Nadie puede ser molestado en su persona, familia, domicilio, papeles o posesiones, sino en virtud de mandamiento escrito de la autoridad
+competente, que funde y motive la causa legal del procedimiento.<br><br>AED - Abogados En Directo<br>
+Negociación
+Sociabilidad Compromiso Dominio del lenguaje verbal no verbal y escrito, Ética Responsabilidad y Estrategia a fin de dar una solucion eficaz.
+<br>
+<br>
+                           
+                                
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<!-- about module -->
+					<div class="col-md-3 text-center">
+						<div class="mz-module-about">
+							<i class="fa  fa-institution ot-circle"></i>
+							<h3>Controversias</h3>
+							<p> Promover un juicio ante la Suprema Corte para dar solución a conflictos que surjan entre Poderes Locales</p>
+						</div>
+                        <a href="https://api.whatsapp.com/send?phone=524445760050&text=Hola%20Abogados%20a%20continuacion%20describo%20mi%20caso%20Mi%20Nombre es:" class=" btn btn-xl-2" target="_blank">Me Interesa</a>
+					</div>
+					<!-- end about module -->
+					<!-- about module -->
+					<div class="col-md-3 text-center">
+						<div class="mz-module-about">
+							<i class="fa fa-shield ot-circle"></i>
+							<h3>Amparo</h3>
+							<p>Por actos u omisiones por parte de los poderes públicos o de particulares en perjuicio de propiedades personas o instituciones</p>
+						</div>
+                        <a href="https://api.whatsapp.com/send?phone=524445760050&text=Hola%20Abogados%20a%20continuacion%20describo%20mi%20caso%20Mi%20Nombre es:" class=" btn btn-xl-2" target="_blank">Me Interesa</a>
+					</div>
+					<!-- end about module -->
+					<!-- about module -->
+					<div class="col-md-3 text-center">
+						<div class="mz-module-about">
+							<i class="fa fa-legal ot-circle"></i>
+							<h3>Apelaciones</h3>
+							<p>El tribunal superior puede pronunciarse sobre todas las cuestiones de hecho y derecho que han sido discutidas en el proceso</p>
+						</div>
+                        <a href="https://api.whatsapp.com/send?phone=524445760050&text=Hola%20Abogados%20a%20continuacion%20describo%20mi%20caso%20Mi%20Nombre es:" class=" btn btn-xl-2" target="_blank">Me interesa</a>
+					</div>
+					<!-- end about module -->
+					<!-- about module -->
+					<div class="col-md-3 text-center">
+						<div class="mz-module-about">
+							<i class="fa fa-search-plus ot-circle"></i>
+							<h3>Recurso de Revisión</h3>
+							<p> Por violación al ordenamiento jurídico aplicado o por falta de aplicación de la disposición debida</p>
+						</div>
+                        <a href="https://api.whatsapp.com/send?phone=524445760050&text=Hola%20Abogados%20a%20continuacion%20describo%20mi%20caso%20Mi%20Nombre es:" class=" btn btn-xl-2" target="_blank">Me Interesa</a>
+					</div>
+					<!-- end about module -->
+				</div>
+			</div>
+			<!-- /.container -->
+		</section>
+		<!--<section class="light-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7">
+						<div class="section-text">
+							<h3>AED Abogados</h3>
+							<p>Compromiso, ética, responsabilidad,  implementación de estrategias a fin de dar una solucion eficaz.</p>
+							<ul>
+								<li>Negociación</li>
+								<li>Sociabilidad</li>
+								<li>Compromiso ciudadano</li>
+								<li>Dominio del lenguaje verbal y no verbal</li>
+							</ul>
+                            <h3>Bienvenidos</h3>
+						</div>
+					</div>
+					<div class="col-md-5">
+
+						<div class="owl-portfolio owl-carousel">
+							<div class="item">
+								<div class="owl-portfolio-item"><img src="images/portfolio-7.webp" class="img-responsive" alt="portfolio"></div>
+							</div>
+							<div class="item">
+								<div class="owl-portfolio-item"><img src="images/portfolio-8.webp" class="img-responsive" alt="portfolio"></div>
+							</div>
+							<div class="item">
+								<div class="owl-portfolio-item"><img src="images/portfolio-9.webp" class="img-responsive" alt="portfolio"></div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>-->
+
+		<section id="menu">
+			<div class="container">
+			<div class="row ">
+           <!-- <img src="images/bg--chil-2.png" alt="img02" class="img-responsive" />-->
+				<div class="col-lg-12 text-center ">
+                
+					<!--<div class="section-title">
+						<h2>...</h2>
+						<p>.... </br>
+                        ....</p>
+					</div>-->
+				</div>
+			</div>
+			<div class="row row-0-gutter">
+				<!-- start portfolio item -->
+				<div class="col-md-4 col-0-gutter">
+					<div class="ot-portfolio-item">
+						<figure class="effect-bubba">
+							<img src="images/portfolio-1.webp" alt="img02" class="img-responsive" />
+							<figcaption>
+								<!--<h2>...</h2>-->
+								<p>Nadie puede ser molestado en su persona, familia, domicilio, papeles o posesiones, sino en virtud de mandamiento escrito de la autoridad
+competente, que funde y motive la causa legal del procedimiento.</p> 
+								<a href="#" data-toggle="modal" data-target="#Modal-1">Ver Mas</a>
+							</figcaption>
+						</figure>
+                        <div class="row">
+					<div class="text-center">
+						<div class="section-title">
+						  <h2>Art:16.- </h2>
+			<p><a href="#" class=" btn btn-xl"  data-toggle="modal" data-target="#Modal-1">Ver Mas</a></p>
+						</div>
+					</div>
+				</div>
+					</div>
+				</div>
+				<!-- end portfolio item -->
+				<!-- start portfolio item -->
+				<div class="col-md-4 col-0-gutter">
+					<div class="ot-portfolio-item">
+						<figure class="effect-bubba">
+							<img src="images/portfolio-2.webp" alt="img02" class="img-responsive" />
+							<figcaption>
+								<!--<h2>Art:14.-</h2>-->
+								<p>Nadie podrá ser privado de la libertad o de sus propiedades, posesiones
+o derechos, sino mediante juicio seguido ante los tribunales
+previamente establecidos, en el que se cumplan las formalidades
+esenciales del procedimiento </p>
+								<a href="#" data-toggle="modal" data-target="#Modal-2">Ver Mas</a>
+							</figcaption>
+						</figure>
+                        <div class="row">
+					<div class="text-center">
+						<div class="section-title">
+						  <h2>Art:14.-</h2>
+						  
+                          <p><a href="#" class=" btn btn-xl"  data-toggle="modal" data-target="#Modal-2">Ver Mas</a></p>
+						</div>
+					</div>
+				</div>
+					</div>
+				</div>
+				<!-- end portfolio item -->
+				<!-- start portfolio item -->
+				<div class="col-md-4 col-0-gutter">
+					<div class="ot-portfolio-item">
+						<figure class="effect-bubba">
+							<img src="images/portfolio-3.webp" alt="img02" class="img-responsive" />
+							<figcaption>
+								<!--<h2>Art:11.-</h2>-->
+								<p>Toda persona tiene derecho para entrar en la República, salir de ella,
+viajar por su territorio y mudar de residencia, sin necesidad de carta de
+seguridad, pasaporte, salvoconducto u otros requisitos semejantes.</p>
+								<a href="#" data-toggle="modal" data-target="#Modal-3">Ver Mas</a>
+							</figcaption>
+						</figure>
+                        <div class="row">
+					<div class="text-center">
+						<div class="section-title">
+						  <h2>Art:11.-</h2>
+						 
+                          <p><a href="#" class=" btn btn-xl"  data-toggle="modal" data-target="#Modal-3">Ver Mas</a></p>
+						</div>
+					</div>
+				</div>
+					</div>
+				</div>
+				<!-- end portfolio item -->
+			</div>
+			<div class="row row-0-gutter">
+				<!-- start portfolio item -->
+				<div class="col-md-4 col-0-gutter">
+					<div class="ot-portfolio-item">
+						<figure class="effect-bubba">
+							<img src="images/portfolio-4.webp" alt="img02" class="img-responsive" />
+							<figcaption>
+								<!--<h2>-</h2>-->
+								<p>Nadie puede ser detenido sólo por ser sospechoso, a menos de que exista una orden de aprehensión por parte de una autoridad competente o de algún señalamiento expreso de una persona afectada o de que se presenten pruebas sobre su participación en un delito.</p>
+								<a href="#" data-toggle="modal" data-target="#Modal-4">Ver Mas</a>
+							</figcaption>
+						</figure>
+                        <div class="row">
+					<div class="text-center">
+						<div class="section-title">
+						  <h2>Detención Ilegal</h2>
+						 
+                          <p><a href="#" class=" btn btn-xl"  data-toggle="modal" data-target="#Modal-4">Ver Mas</a></p>
+						</div>
+					</div>
+				</div>
+					</div>
+				</div>
+				<!-- end portfolio item -->
+				<!-- start portfolio item -->
+				<div class="col-md-4 col-0-gutter">
+					<div class="ot-portfolio-item">
+						<figure class="effect-bubba">
+							<img src="images/portfolio-5.webp" alt="img02" class="img-responsive" />
+							<figcaption>
+								<!--<h2>-</h2>-->
+								<p>Se interpone en contra del funcionario o autoridad por actos u omiciones que se presumen violatorias de la Constitución Política, contra el agente ejecutor o contra ambos</p>
+								<a href="#" data-toggle="modal" data-target="#Modal-5">Ver Mas</a>
+							</figcaption>
+						</figure>
+                        <div class="row">
+					<div class="text-center">
+						<div class="section-title">
+						  <h2>Amparo</h2>
+						 
+                          <p><a href="#" class=" btn btn-xl"  data-toggle="modal" data-target="#Modal-5">Ver Mas</a></p>
+						</div>
+					</div>
+				</div>
+					</div>
+				</div>
+				<!-- end portfolio item -->
+				<!-- start portfolio item -->
+				<div class="col-md-4 col-0-gutter">
+					<div class="ot-portfolio-item">
+						<figure class="effect-bubba">
+							<img src="images/portfolio-6.webp" alt="img02" class="img-responsive" />
+							<figcaption>
+								<!--<h2>-</h2>-->
+								<p>Contrato laboral, Despidos Injustificados, Despidos Justificados, Liquidaciones, Pensiones, Seguros  </p>
+								<a href="#" data-toggle="modal" data-target="#Modal-6">Ver Mas</a>
+							</figcaption>
+						</figure>
+                        <div class="row">
+					<div class="text-center">
+						<div class="section-title">
+						  <h2>Derecho Laboral</h2>
+						  
+                          <p><a href="#" class=" btn btn-xl"  data-toggle="modal" data-target="#Modal-6">Ver Mas</a></p>
+						</div>
+					</div>
+				</div>
+					</div>
+				</div>
+				<!-- end portfolio item -->
+                <!-- start portfolio item -->
+				<div class="col-md-4 col-0-gutter">
+					<div class="ot-portfolio-item">
+						<figure class="effect-bubba">
+							<img src="images/portfolio-7.webp" alt="img02" class="img-responsive" />
+							<figcaption>
+								<!--<h2>-</h2>-->
+								<p>Si la aseguradora retrasa o niega el pago del seguro, podemos hacer valer tu derecho. </p>
+								<a href="#" data-toggle="modal" data-target="#Modal-7">Ver Mas</a>
+							</figcaption>
+						</figure>
+                        <div class="row">
+					<div class="text-center">
+						<div class="section-title">
+						  <h2>Vs Aseguradora</h2>
+						  
+                          <p><a href="#" class=" btn btn-xl"  data-toggle="modal" data-target="#Modal-6">Ver Mas</a></p>
+						</div>
+					</div>
+				</div>
+					</div>
+			</div>
+             <!-- end container -->
+              <!-- start portfolio item -->
+				<div class="col-md-4 col-0-gutter">
+					<div class="ot-portfolio-item">
+						<figure class="effect-bubba">
+							<img src="images/portfolio-8.webp" alt="img02" class="img-responsive" />
+							<figcaption>
+								<!--<h2>-</h2>-->
+								<p>Estafa que se realiza por parte de funcionarios internos de bancos o grupos externos para obtener información y datos privados de terceros, posibilidad de usurpar identidades o directamente robar dinero de usuarios de una entidad bancaria. </p>
+								<a href="#" data-toggle="modal" data-target="#Modal-8">Ver Mas</a>
+							</figcaption>
+						</figure>
+                        <div class="row">
+					<div class="text-center">
+						<div class="section-title">
+						  <h2>Fraude Bancario</h2>
+						  
+                          <p><a href="#" class=" btn btn-xl"  data-toggle="modal" data-target="#Modal-8">Ver Mas</a></p>
+						</div>
+					</div>
+				</div>
+					</div>
+			</div>
+             <!-- end container -->
+              <!-- start portfolio item -->
+				<div class="col-md-4 col-0-gutter">
+					<div class="ot-portfolio-item">
+						<figure class="effect-bubba">
+							<img src="images/portfolio-9.webp" alt="img02" class="img-responsive" />
+							<figcaption>
+								<!--<h2>-</h2>-->
+								<p>Sucesión intestamentaria. Las únicas personas que podrán someterse a este proceso son los familiares, el trámite sólo otorga beneficios a los herederos consanguíneos o legalmente declarados como familia.  </p>
+								<a href="#" data-toggle="modal" data-target="#Modal-9">Ver Mas</a>
+							</figcaption>
+						</figure>
+                        <div class="row">
+					<div class="text-center">
+						<div class="section-title">
+						  <h2>Intestado</h2>
+						  
+                          <p><a href="#" class=" btn btn-xl"  data-toggle="modal" data-target="#Modal-9">Ver Mas</a></p>
+						</div>
+					</div>
+				</div>
+					</div>
+                    
+			</div>
+             <!-- end container -->
+            
+			</div>
+            </div>
+           
+            
+		</section>
+        <section class="dark-bg">
+        <div class="container ">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<div class="section-title">
+							<h2>No firmes nada sin asesoría <br>
+						  <br>Tienes derecho a guardar silencio y a ser asistido por tu abogado</h2>
+                      
+                            <div class="section-text col-lg-12 ">
+							Nadie tiene derecho a ver tus comunicacions privadas, solo mediante una orden de un juez que funde y motive tal hecho </div>
+                            </div>
+                        
+					</div>
+				</div>
+                </div>
+        </section>
+		        
+      
+  <div data-vide-bg="video/3">
+  <div class="banner video-responsive">
+    <header2>
+      <div class="container">
+        <div class="slider-container">
+         <div class="intro-text">
+           <!-- <div class="intro-lead-in">/br>...</div>-->
+            <!--<div class="intro-heading">...</div>-->
+           <!-- <div class="intro-heading">..</div>
+            <a href="Tel:4445760050" class="page-scroll btn btn-xl">“Llama ya!”</a>--> </div>
+           
+        </div>
+        
+      </div>
+    </header2>
+  </div>
+</div>
+        <div id="pedir"></div>
+		<section id="contacto" class="dark-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<div class="section-title">
+							<h2> Persuasión, negociación combinada con <br>visión estratégica y discreción <br>***<br>Servicios para empresas</h2>
+                            </div>
+                            <div class="section-text col-lg-12 ">
+							 Tener en orden todos los temas legales, desde la propia constitución de la empresa, hasta los contratos que tiene que ver con clientes proveedores y empleados, pago de obligaciones fiscales y contractuales, relaciones laborales. Objetivo: proteger el patrimonio de la empresa. 
+							
+						</div>
+                        
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<!--<div class="section-text">
+							<h4>...</h4>
+							<p>...</p>
+                            <p>...</p>
+							<p><i class="fa fa-phone"></i> 444 576 00 50</p>
+							<p><i class="fa fa-envelope"></i> aedabogados@directoslp.com</p>
+						</div>-->
+                        <div align="center">
+                        <!-- partial:index.partial.html -->
+<div class="c">
+  <input type="checkbox" id="faq-1">
+  <h1 style="color:#fff"><label for="faq-1">Materia Civil - ver+ </label></h1>
+  <div class="p">
+    <p style="color:#000">Para todos los contratos con clientes y proveedores, así como los poderes que le concedan los accionistas en razón de su papel como representante jurídico.</p>
+  </div>
+</div>
+<div class="c">
+  <input type="checkbox" id="faq-2">
+  <h1 style="color:#fff"><label for="faq-2">Administrativo - ver+</label></h1>
+  <div class="p">
+    <p style="color:#000">Para las relaciones con el sector público y el cumplimiento de leyes y reglamentos.</p>
+  </div>
+</div>
+<div class="c">
+  <input type="checkbox" id="faq-3">
+  <h1 style="color:#fff"><label for="faq-3">Mercantil - ver+</label></h1>
+  <div class="p">
+    <p style="color:#000">Para la constitución de la propia empresa en el Registro Público de la Propiedad y del Comercio, así como las formalidades que deben llevar con las Asambleas de Accionistas, y otros títulos y operaciones de crédito.. 
+    </p>
+  </div>
+</div>
+<div class="c">
+  <input type="checkbox" id="faq-3a">
+  <h1 style="color:#fff"><label for="faq-3a">Propiedad Intelectual - ver+</label></h1>
+  <div class="p">
+    <p style="color:#000">En razón de las patentes, secreto industrial, marcas y demás objetos que deban estar protegidos por la propiedad industrial. 
+    </p>
+  </div>
+</div>
+<!-- partial -->
+                        </div>
+					</div>
+					
+                    
+                    <div class="row">
+					<div class="col-md-6">
+						 <div align="center">
+                        <!-- partial:index.partial.html -->
+<div class="c">
+  <input type="checkbox" id="faq-4">
+  <h1 style="color:#fff"><label for="faq-4">Penal - ver+</label></h1>
+  <div class="p">
+    <p style="color:#000">Para defender los intereses de la empresa, de sus empleados y directivos ante las probables faltas penales que puedan cometer</p>
+  </div>
+</div>
+<div class="c">
+  <input type="checkbox" id="faq-5">
+  <h1 style="color:#fff"><label for="faq-5">Constitucional y Amparo - ver+</label></h1>
+  <div class="p">
+    <p style="color:#000">Porque las empresas son personas morales cuyos derechos también pueden ser afectados por actos de funcionarios públicos.</p>
+  </div>
+</div>
+<div class="c">
+  <input type="checkbox" id="faq-6">
+  <h1 style="color:#fff"><label for="faq-6">Laboral - ver+</label></h1>
+  <div class="p">
+    <p style="color:#000">Para mantener las formalidades que exige la Ley Federal del Trabajo en cuanto a las relaciones contractuales entre la empresa y sus empleados, de forma individual o colectiva. 
+    </p>
+  </div>
+</div>
+<div class="c">
+  <input type="checkbox" id="faq-6a">
+  <h1 style="color:#fff"><label for="faq-6a">Fiscal - ver+</label></h1>
+  <div class="p">
+    <p style="color:#000">Para el cumplimiento de las obligaciones fiscales de la empresa y el litigio de multas y otros créditos fiscales en que se pueda incurrir. 
+    </p>
+  </div>
+</div>
+<!-- partial -->
+                        </div>
+                    <!-- end  -->
+                    </div>
+					</div>
+				</div>
+                <div class="col-lg-12 text-center">Despido Justificado e injustificado, Investigación, Acoso Laboral, Fusiones y adquisiciones,
+Herencia Testamento, Intestado, Malos Servidores Públicos, Privación Ilegal de la LIbertad.
+                <br>
+                Nuestro objetivo es brindar Servicios jurídicos y legales que dan certeza y seguridad a nuestros clientes, empresas, PYMES, corporaciones, y toda persona física o moral, pública o privada, dentro de la diversidad del mundo jurídico.<br><br>
+                 Contactanos describe brevenente tu caso deja tu nombre y enseguida un asesor te contactara. Concerta una cita via mensaje de whatasapp 
+                </div>
+                <div class="col-lg-12 text-center">
+                <p><a href="https://api.whatsapp.com/send?phone=524445760050&text=Hola%20Abogados%20a%20continuacion%20describo%20mi%20caso.%20Mi%20Nombre%20es:" class=" btn btn-xl" target="_blank">Contactar</a> . <a href="https://api.whatsapp.com/send?phone=524445760050&text=Hola%20Abogados%20URGENTE%20a%20continuacion%20describo%20mi%20caso.%20Mi%20Nombre%20es:" class=" btn btn-xl" target="_blank">Hacer Cita</a> . <a href="https://api.whatsapp.com/send?phone=524445760050&text=Hola%20Abogados%20Quiero%20Ser%20Parte%20Del%20Equipo%20Envio%20Mi%20CV%20Mi%20Nombre%20es:" class=" btn btn-xl" target="_blank">Formar Parte</a></p>
+                </div>
+			</div>
+            
+		</section>
+		<p id="back-top">
+			<a href="#top"><i class="fa fa-angle-up"></i></a>
+		</p>
+        
+        <!--<div id="mapa">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3695.331986316282!2d-100.98075832462459!3d22.15143147979393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842aa20036cb2e7d%3A0x212522b066493349!2sLic.%20Jos%C3%A9%20Ildefonso%20D%C3%ADaz%20de%20Le%C3%B3n%20100%2C%20Centro%20Historico%2C%2078000%20San%20Luis%2C%20S.L.P.!5e0!3m2!1ses!2smx!4v1697673156289!5m2!1ses!2smx" width="100%" height="400" ></iframe>
+</div>-->
+        
+		<footer>
+        
+			<div class="container text-center">
+				<p><a href="mailto:aed@directoslp.com">aed</a> 2024 - <?php
+$visitas = file_get_contents("contador.txt");
+printf(" %d ", $visitas);
+?></span> <a href="Tel:4445760050"><span>Abogados SLP MX.</span></a></p>
+			</div>
+		</footer>
+
+		<!-- Modal for portfolio item 1 -->
+		<div class="modal fade" id="Modal-1" tabindex="-1" role="dialog" aria-labelledby="Modal-label-1">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h3 class="modal-title" id="Modal-label-1">Art.-16 Contitucional Vs Art.-251 codigo penal </h3>
+					</div>
+					<div class="modal-body">
+						<img src="images/portfolio-1.webp" alt="img01" class="img-responsive" />
+                      
+						<div class="modal-works"><span>Art.-</span><span>16</span></div>
+						<p>Nadie puede ser molestado en su persona, familia, domicilio, papeles o posesiones, sino en virtud de mandamiento escrito de la autoridad
+competente, que funde y motive la causa legal del procedimiento. </p> 
+                       
+                        <p>Art.- 251 Codigo penal <br> Si el policía recibe una denuncia y se
+encuentra en la investigación de un delito, puede inspeccionar a la persona o al vehículo.
+El policía sólo podrá hacer actos de inspección cuando exista
+una carpeta de investigación criminal y haya una sospecha razonable. </p>
+<p>DELITO DE ABUSO DE AUTORIDAD: Cuando un servidor público haga uso de facultades que no tenga o use las que sí tiene, para realizar o hacer que otros hagan acciones y omisiones ilegales, para obtener beneficios para el o para sus personas cercanas.</p>
+                        
+                        
+					</div>
+                    
+					<div class="modal-footer">
+                    <div align="center">
+                    <a href="https://api.whatsapp.com/send?phone=524445760050&text=Hola%20Abogados%20a%20continuacion%20describo%20mi%20caso%20para%20una%20asesoria%20previa%20 cita.Mi%20Nombre es:" class="page-scroll btn btn-xl" target="_blank">Hacer Cita</a>
+                    
+                    <a href="https://www.scjn.gob.mx/sites/default/files/sinopsis_asuntos_destacados/documento/2018-06/TP-220318-JLP-0010.pdf" class="page-scroll btn btn-xl" target="_blank">Suprema Corte</a>
+                    </div>
+                     <div class="col-lg-12 text-center">
+				       
+                      </div>
+                    
+						<button type="button" class="btn btn-xl" data-dismiss="modal" >X</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal for portfolio item 2 -->
+		<div class="modal fade" id="Modal-2" tabindex="-1" role="dialog" aria-labelledby="Modal-label-2">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="Modal-label-2">Art.- 14 de la libertad o de sus propiedades</h4>
+					</div>
+					<div class="modal-body">
+						<img src="images/portfolio-2.webp" alt="img01" class="img-responsive" />
+						<div class="modal-works"><span>Art.-</span><span>14</span></div>
+						<p>Nadie podrá ser privado de la libertad o de sus propiedades, posesiones
+o derechos, sino mediante juicio seguido ante los tribunales
+previamente establecidos, en el que se cumplan las formalidades
+esenciales del procedimiento</p>
+					</div>
+					<div class="modal-footer">
+                    <div align="center">
+                    <a href="https://api.whatsapp.com/send?phone=524445760050&text=Hola%20Abogados%20a%20continuacion%20describo%20mi%20caso%20para%20una%20asesoria%20previa%20 cita.Mi%20Nombre es:" class="page-scroll btn btn-xl" target="_blank">Hacer Cita</a>
+                     
+                    </div>
+                     
+						<button type="button" class="btn btn-xl" data-dismiss="modal">X</button>
+                        
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal for portfolio item 3 -->
+		<div class="modal fade" id="Modal-3" tabindex="-1" role="dialog" aria-labelledby="Modal-label-3">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="Modal-label-3">Libertad de trancito</h4>
+					</div>
+					<div class="modal-body">
+						<img src="images/portfolio-3.webp" alt="img01" class="img-responsive" />
+						<div class="modal-works"><span>Art.-</span><span>11</span></div>
+						<p>Toda persona tiene derecho para entrar en la República, salir de ella,
+viajar por su territorio y mudar de residencia, sin necesidad de carta de
+seguridad, pasaporte, salvoconducto u otros requisitos semejantes.<br><br> Los retenes policíacos son violatorios, ilegales y anticonstitucionales porque violan los Artículos 11, 16, 20 y 21 que garantizan a todos los ciudadanos que puedan circular por el país sin ser molestados, a menos de que haya una orden escrita.<br><br>La Suprema Corte de Juasticia de la Nacion: Es "ilegal y arbitraria cualquier inspección que no se realice en casos de flagrancia o cuando no haya una investigación criminal abierta".<br><br>Un policía no puede inspeccionar vehículos o personas a su antojo.
+Tampoco puede realizar una inspección arbitraria al auto o los pasajeros si solo cometen una infracción de tránsito.<br><br><p>Para la detención habra un motivo con fundamento y el policia debera 1°) Identificarse;<br>
+2°) Expresar la causa de la detención;
+3°) Hacer del conocimiento de la persona detenida la cartilla de los derechos
+que le otorga la Constitución y el Código Nacional;
+4°) Realizar un registro preventivo de la persona, en términos del Código
+Nacional. La revisión física deberá considerar las condiciones de edad,
+sexo, discapacidad o cualquier otra que implique una diferencia en el
+tratamiento de la persona detenida;<br><br><br>DELITO DE ABUSO DE AUTORIDAD: Cuando un servidor público haga uso de facultades que no tenga o use las que sí tiene, para realizar o hacer que otros hagan acciones y omisiones ilegales, para obtener beneficios para el o para sus personas cercanas. </p>
+					</div>
+					<div class="modal-footer">
+                    <div align="center">
+                    <a href="https://api.whatsapp.com/send?phone=524445760050&text=Hola%20Abogados%20a%20continuacion%20describo%20mi%20caso%20para%20una%20asesoria%20previa%20 cita.Mi%20Nombre es:" class="page-scroll btn btn-xl" target="_blank">Hacer Cita</a>
+                    <a href="https://twitter.com/i/status/1570264552885059586" class=" btn btn-xl"    target="_blank">No permitas esto:</a>
+                    </div>
+                    
+						<button type="button" class="btn btn-xl" data-dismiss="modal">X</button>
+					</div>
+				</div>
+			</div>
+		</div>
+        <!-- Modal for portfolio item 3a -->
+		<div class="modal fade" id="Modal-3a" tabindex="-1" role="dialog" aria-labelledby="Modal-label-3">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="Modal-label-3">Libertad de trancito</h4>
+					</div>
+					<div class="modal-body">
+						<img src="images/portfolio-3a.webp" alt="img01" class="img-responsive" />
+						<div class="modal-works"><span>Art.-</span><span>11</span></div>
+						<p>1) Identificarse;<br>
+2) Expresar la causa de la detención;
+3) Hacer del conocimiento de la persona detenida la cartilla de los derechos
+que le otorga la Constitución y el Código Nacional;<br>
+4) Realizar un registro preventivo de la persona, en términos del Código
+Nacional. La revisión física deberá considerar las condiciones de edad,
+sexo, discapacidad o cualquier otra que implique una diferencia en el
+tratamiento de la persona detenida;<br>
+5) Dar instrucciones verbales, entendibles y directas de su detención,
+conforme a lo establecido en la Ley y demás disposiciones aplicables;<br>
+6) Efectuada la detención, pondrá a disposición de la Fiscalía Competente al
+detenido,</p>
+					</div>
+					<div class="modal-footer">
+                    <div align="center">
+                    <a href="https://api.whatsapp.com/send?phone=524445760050&text=Hola%20Abogados%20a%20continuacion%20describo%20mi%20caso%20para%20una%20asesoria%20previa%20 cita.Mi%20Nombre es:" class="page-scroll btn btn-xl" target="_blank">Hacer Cita</a> <a href="https://twitter.com/i/status/1570264552885059586" class=" btn btn-xl" >Policia No debe de:</a>
+                    
+                    </div>
+                    
+						<button type="button" class="btn btn-xl" data-dismiss="modal">X</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal for portfolio item 4 -->
+		<div class="modal fade" id="Modal-4" tabindex="-1" role="dialog" aria-labelledby="Modal-label-4">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="Modal-label-4">Ejecución de órdenes de aprehensión
+</h4>
+					</div>
+					<div class="modal-body">
+						<img src="images/portfolio-4.webp" alt="img01" class="img-responsive" />
+						<div class="modal-works"><span>Detencion</span><span>Ilegal</span></div>
+						<p>Conforme al artículo 16 párrafo tercero constitucional, la aprehensión de una
+persona solamente procederá cuando exista una orden judicial motivada por denuncia
+o querella sobre un hecho contemplado como delito. <br> De otro modo no es legal</p>
+					</div>
+					<div class="modal-footer">
+                    <div align="center">
+                    <a href="https://api.whatsapp.com/send?phone=524445760050&text=Hola%20Abogados%20a%20continuacion%20describo%20mi%20caso%20para%20una%20asesoria%20previa%20 cita.Mi%20Nombre es:" class="page-scroll btn btn-xl" target="_blank">Hacer Cita</a>
+                    <a href="http://insyde.org.mx/pdf/jp/Protocolo-Detenciones.pdf" class=" btn btn-xl" target="_blank">Saber mas:</a>
+                    </div>
+                    
+						<button type="button" class="btn btn-xl" data-dismiss="modal">X</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal for portfolio item 5 -->
+		<div class="modal fade" id="Modal-5" tabindex="-1" role="dialog" aria-labelledby="Modal-label-5">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="Modal-label-5">Amparo por Actos u Omiciones</h4>
+					</div>
+					<div class="modal-body">
+						<img src="images/portfolio-5.webp" alt="img01" class="img-responsive" />
+						<div class="modal-works"><span>Ley de</span><span>Amparo</span></div>
+						<p>Cuando se trate de actos que importen peligro de privación de la vida, ataques a la libertad personal fuera de procedimiento, incomunicación, deportación o expulsión, proscripción o destierro, extradición, desaparición forzada de personas o alguno de los prohibidos por el artículo 22, así como la incorporación forzosa al Ejército, Armada o Fuerza Aérea nacionales, y el agraviado se encuentre imposibilitado para promover el amparo, podrá hacerlo cualquiera otra persona en su nombre, aunque sea menor de edad.</p>
+					</div>
+					<div class="modal-footer">
+                    <div align="left">
+                    <a href="https://api.whatsapp.com/send?phone=524445760050&text=Hola%20Abogados%20a%20continuacion%20describo%20mi%20caso%20para%20una%20asesoria%20previa%20 cita.Mi%20Nombre es:" class="page-scroll btn btn-xl" target="_blank">Hacer Cita</a>
+                     <a href="https://www.diputados.gob.mx/LeyesBiblio/pdf/LAmp.pdf" class=" btn btn-xl" target="_blank">Saber mas:</a>
+                    </div>
+                    
+						<button type="button" class="btn btn-xl" data-dismiss="modal">x</button>
+					</div>
+				</div>
+			</div>
+		</div>
+        
+        <!-- Modal for portfolio item 6 -->
+        <div class="modal fade" id="Modal-6" tabindex="-1" role="dialog" aria-labelledby="Modal-label-6">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="Modal-label-6">No firmes hojas en blanco</h4>
+					</div>
+					<div class="modal-body">
+						<img src="images/portfolio-6.webp" alt="img01" class="img-responsive" />
+						<div class="modal-works"><span>Derecho</span><span>Laboral</span></div>
+						<p>Si una persona presta servicios o realiza un trabajo a favor de otra, recibiendo por ella un pago, no implica necesariamente la existencia de una relación laboral.
+para que exista una relación laboral tiene que existir subordinación. la cual no existe en los contratos de prestación de servicios. <br><br>En el caso de existir El trabajador cuenta con el término de dos meses para demandar ante la Junta de Conciliación y Arbitraje. A partir del día siguiente en que ocurrió el despido<br>el trabajador que haya sido despedido injustificadamente tendrá derecho a reclamar el pago de: Indemnización de tres meses de salario, aguinaldo, vacaciones, antigüedad, bonos, comisiones, fondo de ahorro, utilidades, salarios vencidos desde la fecha del despido hasta por un período máximo de doce meses, a razón del que corresponda a la fecha en que se realice el pago.</p>
+					</div>
+					<div class="modal-footer">
+                    <div align="left">
+                    <a href="https://api.whatsapp.com/send?phone=524445760050&text=Hola%20Abogados%20a%20continuacion%20describo%20mi%20caso%20para%20una%20asesoria%20previa%20 cita.Mi%20Nombre es:" class="page-scroll btn btn-xl" target="_blank">Hacer Cita</a>
+                     <a href="https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf" class=" btn btn-xl" target="_blank">Saber mas:</a>
+                    </div>
+                    
+						<button type="button" class="btn btn-xl" data-dismiss="modal">X</button>
+					</div>
+				</div>
+			</div>
+		</div>
+         
+        <!-- Modal for portfolio item 7 -->
+        <div class="modal fade" id="Modal-7" tabindex="-1" role="dialog" aria-labelledby="Modal-label-7">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="Modal-label-7">Incumplimiento de la aseguradora</h4>
+					</div>
+					<div class="modal-body">
+						<img src="images/portfolio-7.webp" alt="img07" class="img-responsive" />
+						<div class="modal-works"><span>Donas</span><span>Donas</span></div>
+						<p>Cualquier tipo de negativa de pago de parte de la aseguradora deberá ser comunicada por escrito. La compañía deberá explicar los motivos por los cuales no pueden realizar la indemnización correspondiente.<br>Si se demanda a la aseguradora por incumplimiento. Es importante contar con todos los documentos de la contratación del servicio, así como todas las comunicaciones que hubo entre ambas partes.<br><br> tambien se puede demandar a la aseguradora por: Cuando la aseguradora incumple las normas obligatorias de la legislación específica sobre el contrato de seguro, ejemplo la Ley 50/1980.<br>
+Cuando la aseguradora incumple las normas sobre transparencia de mercado y protección de los derechos de los usuarios.<br>
+Cuando no existe o funciona mal el servicio de atención al cliente de la aseguradora. <br>Cuando la aseguradora no respeta la oferta hecha o no da la respuesta a que se refieren los artículos 7 y 22.3 de la Ley 35/2015.<br>Cuando la aseguradora incumple los preceptos de obligada observancia para las entidades aseguradoras, comprendidos en normas con rango de Ley de supervisión de los seguros privados.
+</p>
+					</div>
+					<div class="modal-footer">
+                    <div align="left">
+                    <a href="https://api.whatsapp.com/send?phone=524445760050&text=Hola%20Abogados%20a%20continuacion%20describo%20mi%20caso%20para%20una%20asesoria%20previa%20 cita.Mi%20Nombre es:" class="page-scroll btn btn-xl" target="_blank">Hacer Cita</a>
+                    </div>
+                   
+						<button type="button" class="btn btn-xl" data-dismiss="modal">X</button>
+					</div>
+				</div>
+			</div>
+		</div>
+         <!-- Modal for portfolio item 8 -->
+        <div class="modal fade" id="Modal-8" tabindex="-1" role="dialog" aria-labelledby="Modal-label-8">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="Modal-label-8">Fraude</h4>
+					</div>
+					<div class="modal-body">
+						<img src="images/portfolio-8.webp" alt="img08" class="img-responsive" />
+						<div class="modal-works"><span>Fraude</span><span>Bancario</span></div>
+						<p>El delito de fraude consiste en obtener un beneficio material, económico, o de apoderarse de algo ajeno, de forma indebida a través del engaño o sacando provecho de la equivocación de una persona. Por ejemplo, administrar y alterar registros, gastos o ventas para obtener un beneficio en un establecimiento o empresa, o declararse sin recursos para incumplir obligaciones son conductas que configuran fraude.  <br></p>
+					</div>
+					<div class="modal-footer">
+                    <div align="left">
+                    <a href="https://api.whatsapp.com/send?phone=524445760050&text=Hola%20Abogados%20a%20continuacion%20describo%20mi%20caso%20para%20una%20asesoria%20previa%20 cita.Mi%20Nombre es:" class="page-scroll btn btn-xl" target="_blank">Hacer Cita</a>
+                    </div>
+                    
+						<button type="button" class="btn btn-xl" data-dismiss="modal">X</button>
+					</div>
+				</div>
+			</div>
+		</div>
+         <!-- Modal for portfolio item 9 -->
+        <div class="modal fade" id="Modal-9" tabindex="-1" role="dialog" aria-labelledby="Modal-label-9">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="Modal-label-9">Intestado- Sucesión de derechos</h4>
+					</div>
+					<div class="modal-body">
+						<img src="images/portfolio-9.webp" alt="img08" class="img-responsive" />
+						<div class="modal-works"><span>Intestado </span> - <span>Despojo</span></div>
+						<p>Un inmueble o casa intestada, es una propiedad en la que la persona fallecida no dejó ningún documento que avale quién será el nuevo propietario del bien inmueble. Esto provoca que la propiedad no pueda ser vendida ni reclamada por nadie hasta que la situación se resuelva legalmente<br><br>Habra que solicitar un juicio de sucesión intestamentaria
+Para poder eliminar el estatus de “intestada” sobre una propiedad, 
+Este procedimiento legal designará qué parte de la herencia te corresponde a ti y a tus familiares.
+<br><br>Delito de despojo: Nadie por medio de la violencia física o moral, o por la vía de la furtividad o el engaño, puede adquirir con el transcurso del tiempo o de los recovecos legales un bien inmueble que no le pertenece.<br><br>Delito de Fraude: Al que por título oneroso enajene alguna cosa con conocimiento de que no tiene derecho para disponer de ella, o la arriende, hipoteque, empeñe o grave de cualquier otro modo, si ha recibido el precio, el alquiler, la cantidad en que la gravó, parte de ellos o un lucro equivalente;</p>
+					</div>
+					<div class="modal-footer">
+                    <div align="left">
+                    <a href="https://api.whatsapp.com/send?phone=524445760050&text=Hola%20Abogados%20a%20continuacion%20describo%20mi%20caso%20para%20una%20asesoria%20previa%20 cita.Mi%20Nombre es:" class="page-scroll btn btn-xl" target="_blank">Hacer Cita</a>
+                    </div>
+                   
+						<button type="button" class="btn btn-xl" data-dismiss="modal">X</button>
+					</div>
+				</div>
+			</div>
+		</div>
+        <!-- Modal for portfolio item 10 -->
+        <div class="modal fade" id="Modal-10" tabindex="-1" role="dialog" aria-labelledby="Modal-label-10">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="Modal-label-10">...</h4>
+					</div>
+					<div class="modal-body">
+						<img src="images/portfolio-10.webp" alt="img10" class="img-responsive" />
+						<div class="modal-works"><span>...</span><span>...</span></div>
+						<p>...</p>
+					</div>
+					<div class="modal-footer">
+                    <div align="left">
+                    <a href="https://api.whatsapp.com/send?phone=524445760050&text=Hola%20Abogados%20a%20continuacion%20describo%20mi%20caso%20para%20una%20asesoria%20previa%20 cita.Mi%20Nombre es:" class="page-scroll btn btn-xl" target="_blank">Hacer Cita</a>
+                    </div>
+                   
+						<button type="button" class="btn btn-xl" data-dismiss="modal">Cerrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+         <!-- Modal for portfolio item 11 -->
+        <div class="modal fade" id="Modal-11" tabindex="-1" role="dialog" aria-labelledby="Modal-label-11">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="Modal-label-11">...</h4>
+					</div>
+					<div class="modal-body">
+						<img src="images/portfolio-11.webp" alt="img11" class="img-responsive" />
+						<div class="modal-works"><span>...</span><span>...</span></div>
+						<p>...</p>
+					</div>
+					<div class="modal-footer">
+                    <div align="left">
+                    <a href="https://api.whatsapp.com/send?phone=524445760050&text=Hola%20Abogados%20a%20continuacion%20describo%20mi%20caso%20para%20una%20asesoria%20previa%20 cita.Mi%20Nombre es:" class="page-scroll btn btn-xl" target="_blank">Hacer Cita</a>
+                    </div>
+                   
+						<button type="button" class="btn btn-xl" data-dismiss="modal">Cerrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+         
+
+		<!-- Bootstrap core JavaScript
+			================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!--<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>-->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/cbpAnimatedHeader.js"></script>
+		<script src="js/jquery.appear.js"></script>
+		<script src="js/SmoothScroll.min.js"></script>
+		<script src="js/mooz.themes.scripts.js"></script>
+    <style>    
+        #contenedor {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px;
+height: 0;
+overflow: hidden;
+display:block;
+}
+#contenedor iframe,
+#contenedor object,
+#contenedor embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+</style>
+<style>
+	.video {  
+ /* min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;*/ 
+  position: fixed;    
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%); 
+ 
+  z-index: -100;
+ 
+  background-size: cover;
+ 
+}
+	    </style>
+<style>
+.video-responsive {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px;
+height: 0;
+overflow: hidden;
+}
+
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+    </style>
+    <!--whatsapp-->
+
+
+    <!--whasapp-->
+    <style>
+	.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('images/logo-3.png') 50% 50% no-repeat rgb(0,0,0);
+    opacity: .99;
+	
+}
+	</style>
+<script type="text/javascript">
+$(window).load(function() {
+    $(".loader").fadeOut("slow");
+	$('#link').attr('href','https://directoslp.com/abogados');
+});
+	
+	
+</script>
+        
+	</body>
+</html>
